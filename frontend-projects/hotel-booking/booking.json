@@ -1,0 +1,12 @@
+{
+    "confirmationNumber": "HH-2026-0842",
+    "guestName": "Victoria Bamidele",
+    "roomType": "Garden Suite",
+    "checkIn": "2026-10-14",
+    "checkOut": "2026-10-17",
+    "total": "$540.00",
+    "wifi": {
+        "network": "OasisModernHotelGuest",
+        "password": "Oasis2026!"
+    }
+}

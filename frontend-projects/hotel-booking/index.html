@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hotel Booking Confirmation</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="booking-page">
+                <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+    <div class="brand">
+        <span class="brand-mark">H</span>
+        <span class="brand-name">Oasis Modern Hotel</span>
+    </div>
+
+    <button 
+        class="menu-toggle" 
+        id="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+    >
+        ☰
+    </button>
+
+    <nav class="sidebar-nav" id="sidebar-nav" aria-label="Main navigation">
+        <a href="#booking">Booking</a>
+        <a href="#stay">Your Stay</a>
+        <a href="#arrival">Arrival</a>
+        <a href="#amenities">Amenities</a>
+    </nav>
+
+    <div class="sidebar-footer">
+        <p>Need help?</p>
+        <a href="mailto:hello@oasismodernhotel.com">
+            Contact the host
+        </a>
+    </div>
+
+    </aside>
+            <!-- MAIN CONTENT -->
+
+    <section class="booking-content" id="booking">
+
+    <header class="page-header">
+        <div>
+            <p class="eyebrow">Booking confirmed</p>
+            <h1>Your stay is all set.</h1>
+            <p class="intro">
+                Everything you need for a comfortable stay,
+                all in one place.
+            </p>
+        </div>
+
+        <button class="print-button" id="print-receipt" type="button">
+            Print receipt
+        </button>
+    </header>
+                <!-- CARD STACK -->
+
+    <section class="card-stack" id="stay">
+
+    <article class="receipt-card">
+
+        <div class="receipt-header">
+            <div>
+                <p class="card-label">Reservation</p>
+                <h2>Oasis Modern Hotel</h2>
+            </div>
+
+            <span class="confirmation-status">
+                Confirmed
+            </span>
+        </div>
+
+        <div class="confirmation-number">
+            <span>Confirmation</span>
+            <strong id="confirmation-number">
+                HH-2026-0842
+            </strong>
+        </div>
+
+        <div class="receipt-details">
+
+            <div class="detail-item">
+                <span>Guest</span>
+                <strong id="guest-name">
+                    Victoria Bamidele
+                </strong>
+            </div>
+
+            <div class="detail-item">
+                <span>Room</span>
+                <strong id="room-type">
+                    Garden Suite
+                </strong>
+            </div>
+
+            <div class="detail-item">
+                <span>Check-in</span>
+                <strong id="check-in">
+                    14 October 2026
+                </strong>
+            </div>
+
+            <div class="detail-item">
+                <span>Check-out</span>
+                <strong id="check-out">
+                    17 October 2026
+                </strong>
+            </div>
+
+        </div>
+
+        <div class="receipt-total">
+            <span>Total</span>
+            <strong id="booking-total">
+                $540.00
+            </strong>
+        </div>
+
+    </article>
+                    <!-- HOST NOTE -->
+
+    <article class="host-note">
+
+    <div class="note-header">
+        <span class="note-icon">✦</span>
+
+        <div>
+            <p class="card-label">A note from your host</p>
+            <h2>Welcome to Oasis Modern Hotel</h2>
+        </div>
+    </div>
+
+    <p class="host-message">
+        We're so happy to have you staying with us.
+        Your room will be ready when you arrive, and
+        we've put together a few details below to make
+        your stay as easy as possible.
+    </p>
+
+    <p class="host-signature">
+        See you soon,<br>
+        <strong>Amelia</strong>
+    </p>
+    </article>
+    </section>
+                    <!-- STAY INFORMATION -->
+
+    <section class="stay-info" id="amenities">
+                    <!-- ARRIVAL -->
+
+    <article class="info-card" id="arrival">
+
+        <span class="info-icon">↗</span>
+
+        <div>
+            <p class="info-label">Arrival</p>
+
+            <h3>2:00 PM</h3>
+
+            <p>
+                Check-in starts at 2:00 PM.
+                Your room will be ready when you arrive.
+            </p>
+        </div>
+
+    </article>
+
+                    <!-- WI-FI -->
+
+    <article class="info-card">
+
+        <span class="info-icon">⌁</span>
+
+        <div>
+            <p class="info-label">Wi-Fi</p>
+
+            <h3 id="wifi-name">OasisModernHotelGuest</h3>
+
+            <div class="wifi-password">
+
+                <code id="wifi-password">
+                    Oasis2026!
+                </code>
+
+                <button
+                    type="button"
+                    class="copy-button"
+                    id="copy-wifi"
+                    aria-label="Copy Wi-Fi password"
+                >
+                    Copy
+                </button>
+
+            </div>
+
+            <p id="copy-message" class="copy-message" aria-live="polite"></p>
+
+        </div>
+
+    </article>
+
+                    <!-- BREAKFAST -->
+
+    <article class="info-card">
+
+        <span class="info-icon">☼</span>
+
+        <div>
+            <p class="info-label">Breakfast</p>
+
+            <h3>7:00 – 10:00 AM</h3>
+
+            <p>
+                Breakfast is served every morning
+                in the garden dining room.
+            </p>
+        </div>
+
+    </article>
+    </section>
+                    <!-- ACTIONS -->
+
+    <div class="booking-actions">
+
+    <button 
+        type="button" 
+        class="calendar-button"
+        id="add-calendar"
+    >
+        Add to calendar
+    </button>
+     </div>
+                 <!-- FOOTER -->
+
+     <footer class="page-footer">
+
+    <p>
+       Oasis Modern Hotel
+    </p>
+
+    <p>
+        Your reservation is confirmed.
+    </p>
+
+     </footer>
+
+    </main>
+    <script src="script.js"></script>
+
+</body>
+</html>
